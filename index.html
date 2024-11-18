@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StockSneaker - Plataforma de compra y venta de sneakers">
+    <title>StockSneaker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>StockSneaker</h1>
+        </header>
+
+        <!-- Formulario para agregar un nuevo producto -->
+        <section class="form">
+            <form id="crear">
+                <div class="campos-crear">
+                    <label for="title">Título del Producto</label>
+                    <input type="text" id="title" placeholder="Ingresa el título del producto" required>
+        
+                    <label for="description">Descripción</label>
+                    <input type="text" id="description" placeholder="Ingresa una breve descripción" required>
+    
+                    <label for="value">Valor</label>
+                    <input type="number" id="value" min="1" placeholder="Valor en dólares" required>
+    
+                    <label for="images">URL de la Imagen</label>
+                    <input type="url" id="images" placeholder="Ingresa la URL de la imagen" required>
+
+                    <!-- Botón de envío -->
+                    <button type="submit" class="submit">Agregar Producto</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Lista de productos -->
+        <section class="productos">
+            <div class="scrolleable">
+                <ul id="lista"></ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

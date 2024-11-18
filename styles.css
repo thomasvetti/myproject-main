@@ -1,0 +1,179 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo */
+body {
+    background-image: url('https://i.postimg.cc/GmS1YF5p/sneakers.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Formulario */
+.form {
+    background: rgb(202, 159, 190);
+}
+
+.form .campos-crear {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form label {
+    color: #e0e0e0;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px;
+}
+
+.form input:focus {
+    border-color: #e81cff;
+    box-shadow: 0 0 8px rgba(232, 28, 255, 0.5);
+}
+
+/* Botón de envío */
+.form button.submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #893d91;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form button.submit:hover {
+    background-color: #40c9ff;
+    box-shadow: 0 0 8px rgba(64, 201, 255, 0.5);
+}
+
+.form button.submit:active {
+    transform: scale(0.95);
+}
+
+/* Lista de productos */
+.productos {
+    margin-top: 40px;
+}
+
+.scrolleable {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.scrolleable ul {
+    list-style: none;
+}
+
+.scrolleable li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.scrolleable li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.scrolleable li img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 80%;
+    max-width: 200px;
+}
+
+.scrolleable li img:hover {
+    transform: scale(1.2);
+}
+
+/* Botones de eliminar y editar */
+.scrolleable li button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    width: 80%;
+}
+
+.scrolleable li button.eliminar {
+    background-color: #ff4d4d;
+    transition: background-color 0.3s ease;
+}
+
+.scrolleable li button.eliminar:hover {
+    background-color: #ff0000;
+}
+
+.scrolleable li button.editar {
+    background-color: #4caf50;
+    transition: background-color 0.3s ease;
+}
+
+.scrolleable li button.editar:hover {
+    background-color: #388e3c;
+}
+
+/* Efectos de enfoque */
+input[type="text"], input[type="number"], input[type="url"] {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="url"]:focus {
+    background-color: #1d1d1d;
+}
